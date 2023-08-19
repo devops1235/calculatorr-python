@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: 
+metadata:
   name: calculator-app
   labels:
     app: calculator-app
@@ -9,15 +9,13 @@ spec:
   selector:
     matchLabels:
       app: calculator-app
-
   template:
     metadata:
       labels:
-       app: calculator-app
-
+        app: calculator-app
     spec:
-      conatainers:
+      containers:
       - name: calculator-app
-        image: devopstraning1235/calculator-app:1
+        image: devopstraning1235/calculator-app:replaceImageTag
         ports:
         - containerPort: 5000
