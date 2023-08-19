@@ -8,6 +8,7 @@ spec:
     app: calculator-app
   ports:
     - protocol: TCP
-      port: 4000
+      port: 3000
       targetPort: 5000
+      #nodePort: 30000
   type: NodePort
