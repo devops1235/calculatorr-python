@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Web Calculator</h1>
+    <form method="POST" action="/calculate">
+        <input type="text" name="expression" placeholder="Enter expression" required>
+        <button type="submit">Calculate</button>
+    </form>
+    {% if result %}
+    <p>Result: {{ result }}</p>
+    {% endif %}
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    {% if last_expression %}
+    <p>Last Expression: {{ last_expression }}</p>
+    {% endif %}
+</body>
+</html>
