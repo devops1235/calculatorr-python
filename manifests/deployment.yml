@@ -18,6 +18,6 @@ spec:
   spec:
     conatainers:
     - name: calculator-app
-      image: devopstraning1235/calculator-app:11
+      image: devopstraning1235/calculator-app:replaceImageTag
       ports:
       - containerPort: 5000
