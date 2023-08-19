@@ -12,12 +12,12 @@ spec:
 
   template:
     metadata:
-      lables:
+      labels:
        app: calculator-app
 
-  spec:
-    conatainers:
-    - name: calculator-app
-      image: devopstraning1235/calculator-app:13
-      ports:
-      - containerPort: 5000
+    spec:
+      conatainers:
+      - name: calculator-app
+        image: devopstraning1235/calculator-app:13
+        ports:
+        - containerPort: 5000
